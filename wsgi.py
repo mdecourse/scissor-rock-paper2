@@ -61,6 +61,9 @@ def computer():
     # compare message
     cp = compare(cgd, user)
     result = "default user input is 'scissor', add ?user=rock or ?user=paper to change user input <br /><br />"
+    result += "<a href='https://scissor-rock-paper2.herokuapp.com'>scissor</a><br /><br />"
+    result += "<a href='https://scissor-rock-paper2.herokuapp.com?user=rock'>rock</a><br /><br />"
+        result += "<a href='https://scissor-rock-paper2.herokuapp.com?user=paper'>paper</a><br /><br />"
     result += "computer: " + str(cgd) + " and user: " + str(user) + "<br /><br />"
     result += cp
     return result
